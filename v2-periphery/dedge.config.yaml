@@ -1,0 +1,21 @@
+config:
+  framework: "foundry" 
+  framework_version: "1.8.1" 
+  node_version: "18" 
+  package_manager: "yarn"
+
+environment:
+  API_KEY_INFURA: "YOUR_API_KEY_INFURA"
+  EOA: "YOUR_EOA_ADDRESS"
+  FOUNDRY_PROFILE: "lite"
+  MNEMONIC: "YOUR_MNEMONIC"
+  RPC_URL_MAINNET: "YOUR_RPC_URL_MAINNET"
+  SPHINX_API_KEY: "YOUR_API_KEY"
+  SPHINX_ORG_ID: "YOUR_ORG_ID"
+  SPHINX_PROJECT_NAME: "YOUR_PROJECT_NAME"
+
+tasks:
+  install-dependencies:
+    - yarn install
+    - forge install sablier-labs/v2-periphery
+    - forge install --no-commit sablier-labs/v2-core@release OpenZeppelin/openzeppelin-contracts@v4.9.2
