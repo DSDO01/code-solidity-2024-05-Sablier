@@ -38,5 +38,4 @@ environment:
 tasks:
   install-dependencies:
     - yarn install
-    - forge install --no-commit sablier-labs/v2-core
-    - forge install --no-commit OpenZeppelin/openzeppelin-contracts@v5.0.0 PaulRBerg/prb-math
+    - forge install

@@ -17,5 +17,4 @@ environment:
 tasks:
   install-dependencies:
     - yarn install
-    - forge install sablier-labs/v2-periphery
-    - forge install --no-commit sablier-labs/v2-core@release OpenZeppelin/openzeppelin-contracts@v4.9.2
+    - forge install
